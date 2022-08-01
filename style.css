@@ -43,6 +43,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center center;
 }
 .card-1{
     grid-area: area1;
@@ -85,3 +86,20 @@ p{
     background-image: url("");
     background-size: cover;
 } */
+@media only screen and (max-width: 1200px) {
+    .container{
+        background-color: var(--black);
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'area1'
+            'area2'
+            'area3'
+            'area5'
+            'area4';
+        gap: 1rem;
+        padding: 1rem;
+    }
+  }
